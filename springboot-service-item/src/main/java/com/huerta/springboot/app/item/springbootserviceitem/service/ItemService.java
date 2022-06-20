@@ -1,17 +1,12 @@
 package com.huerta.springboot.app.item.springbootserviceitem.service;
 
-import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 import com.huerta.springboot.app.item.springbootserviceitem.clients.ProductClientRest;
 import com.huerta.springboot.app.item.springbootserviceitem.models.entity.Item;
-import com.huerta.springboot.app.item.springbootserviceitem.models.entity.Product;
 
 import lombok.AllArgsConstructor;
 
@@ -19,7 +14,7 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class ItemService {
 
-    private final RestTemplate clientRest;
+    // private final RestTemplate clientRest;
 
     private final ProductClientRest productClientRest;
 

@@ -1,0 +1,47 @@
+{
+    "configurations": [
+
+
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringbootServiceEurekaServerApplication<springboot-service-eureka-server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.huerta.springboot.app.eureka.springbootserviceeurekaserver.SpringbootServiceEurekaServerApplication",
+            "projectName": "springboot-service-eureka-server",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringbootServiceItemApplication<springboot-service-item>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.huerta.springboot.app.item.springbootserviceitem.SpringbootServiceItemApplication",
+            "projectName": "springboot-service-item",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringbootServiceProductsApplication<springboot-service-products>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.huerta.springboot.app.products.springbootserviceproducts.SpringbootServiceProductsApplication",
+            "projectName": "springboot-service-products",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "9001 Spring Boot-SpringbootServiceProductsApplication<springboot-service-products>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.huerta.springboot.app.products.springbootserviceproducts.SpringbootServiceProductsApplication",
+            "projectName": "springboot-service-products",
+            "args": "",
+            "vmArgs": "-Dserver.port=9001",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
