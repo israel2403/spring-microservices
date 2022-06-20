@@ -1,6 +1,5 @@
 package com.huerta.springboot.app.products.springbootserviceproducts.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.http.HttpStatus;
@@ -26,7 +25,7 @@ public class ProductController {
     }
 
     @GetMapping("/products/{id}")
-    public Product getById(@PathVariable final Long id) {
-        return productService.getById(id);
+    public ResponseEntity<Product> getById(@PathVariable final Long id) {
+        return new ResponseEntity<>(productService.getById(id), HttpStatus.OK);
     }
 }
